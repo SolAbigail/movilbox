@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/cardview"
+    app:cardBackgroundColor="@color/md_white_1000"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <ImageView
+          android:id="@+id/logo"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_margin="10dp"></ImageView>
+
+        <TextView
+            android:id="@+id/title"
+            android:textSize="15dp"
+            android:text="Titulo Post"
+            android:layout_width="0dp"
+            android:textColor="#22ffffff"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fav"
+            android:layout_margin="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="0dp"
+            android:text="Leer"
+            android:textColor="#22ffffff"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="15dp"></TextView>
+
+        <ImageView
+            android:id="@+id/fav"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_star"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
