@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:id="@+id/cardview"
-    app:cardBackgroundColor="@color/md_white_1000"
     android:layout_margin="10dp"
     app:cardCornerRadius="10dp">
 
@@ -28,7 +27,6 @@
             android:textSize="15dp"
             android:text="Titulo Post"
             android:layout_width="0dp"
-            android:textColor="#22ffffff"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@+id/logo"
             app:layout_constraintTop_toTopOf="parent"
@@ -39,7 +37,6 @@
             android:id="@+id/body"
             android:layout_width="0dp"
             android:text="Leer"
-            android:textColor="#22ffffff"
             android:fontFamily="sans-serif-condensed-light"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"

@@ -45,7 +45,6 @@ public class HolderPost extends RecyclerView.ViewHolder {
         this.postListener = postListener;
         body.setText(post.getBody());
         title.setText(post.getTitle());
-        body.setTextColor(Color.parseColor("#22ffffff"));
 
 
         if (post.isFav()){
